@@ -48,7 +48,7 @@ namespace ProjectManagementLib.Controllers {
             var resources = GetResources(id);
             if (resources is null) {
                 throw new Exception("Resources not found!");
-            }
+            }  
             _context.Resources.Remove(resources);
             var rowsAffected = _context.SaveChanges();
             if (rowsAffected != 1) {
