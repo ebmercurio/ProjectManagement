@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 using ProjectManagementLib.Models;
 
 
-
 namespace ProjectManagementLib.Controllers {
     public class ProjectsController {
         private AppDbContext _context = new AppDbContext();
-
 
 
         //return all projects
@@ -19,12 +17,10 @@ namespace ProjectManagementLib.Controllers {
         }
 
 
-
         //return project by Id
         public Project GetProject(int id) {
             return _context.Projects.FindAsync(id);
         }
-
 
 
         //add project
@@ -38,7 +34,6 @@ namespace ProjectManagementLib.Controllers {
         }
 
 
-
         //change project
         public void UpdateProject(Project project) {
             _context.Entry(project).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -49,13 +44,12 @@ namespace ProjectManagementLib.Controllers {
         }
 
 
-
         //delete Project
         public void DeleteProject(int id) {
             var project = GetProject(id);
 
 
-
         }
     }
 }
+
