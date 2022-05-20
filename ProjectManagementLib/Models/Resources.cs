@@ -14,6 +14,9 @@ namespace ProjectManagementLib {
         public string Name { get; set; }
         public int HoursPerDay { get; set; }
 
+        public virtual Project Project { get; set; }
+
+
 
     }
 }

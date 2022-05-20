@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 namespace ProjectManagementLib.Models {
     public class AppDbContext : DbContext {
 
+        public virtual DbSet<Project> Projects { get; set; }  
+        public virtual DbSet<Resources> Resources { get; set; }
+        public virtual DbSet<Work> Works { get; set; }
 
         public AppDbContext() { }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
