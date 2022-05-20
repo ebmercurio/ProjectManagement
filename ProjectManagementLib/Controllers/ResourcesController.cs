@@ -9,6 +9,14 @@ namespace ProjectManagementLib.Controllers {
     public class ResourcesController {
         private AppDbContext _context = new AppDbContext();
 
+        #region
+        public void AllocateResources(int resourceId, int projectId) {
+            var resource = GetResources(resourceId);
+            resource.ProjectId = projectId;
+        }
+
+        #endregion
+
         #region GetResources()
         public List<Resources> GetResources() {
 
