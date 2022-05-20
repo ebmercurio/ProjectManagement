@@ -42,7 +42,6 @@ namespace ProjectManagementLib.Controllers {
                 throw new Exception("AddWork failed");
             }
             Recalculate(work.ProjectId);
-            _context.SaveChanges();
             return work;
         }
 
@@ -55,7 +54,6 @@ namespace ProjectManagementLib.Controllers {
                 throw new Exception("UpdateWorks failed");
             }
             Recalculate(work.ProjectId);
-            _context.SaveChanges();
         }
 
 
@@ -71,7 +69,6 @@ namespace ProjectManagementLib.Controllers {
                 throw new Exception("DeleteWork failed!");
             }
             Recalculate(work.ProjectId);
-            _context.SaveChanges();
         }
     }
 }
