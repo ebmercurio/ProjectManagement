@@ -12,4 +12,4 @@ var work = new Work() {
     Id = 0, ProjectId = 1, Description = "Depression", Hours = 100, ResourceId = 9
 };
 
-worksCtrl.AddWork(work);
+// worksCtrl.AddWork(work);
