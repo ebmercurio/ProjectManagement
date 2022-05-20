@@ -22,5 +22,6 @@ namespace ProjectManagementLib.Models {
             builder.UseSqlServer(connStr);
 
         }
+
     }
 }

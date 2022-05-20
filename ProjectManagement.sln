@@ -3,12 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagement", "ProjectManagement\ProjectManagement.csproj", "{44F0169C-DC20-4A59-AFFC-71AD9722C61C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{788D5B5A-ABE2-482D-81B4-D3516E24AD88} = {788D5B5A-ABE2-482D-81B4-D3516E24AD88}
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectManagement", "ProjectManagement\ProjectManagement.csproj", "{44F0169C-DC20-4A59-AFFC-71AD9722C61C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementLib", "ProjectManagementLib\ProjectManagementLib.csproj", "{788D5B5A-ABE2-482D-81B4-D3516E24AD88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectManagementLib", "ProjectManagementLib\ProjectManagementLib.csproj", "{788D5B5A-ABE2-482D-81B4-D3516E24AD88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
